@@ -1,2 +1,3 @@
 # tmdb-proj
-Personal Gatsby project for learning react and graph ql
+Personal Gatsby project for learning react and graph ql\
+change here
