@@ -5,13 +5,5 @@
  */
 
 module.exports = {
-  plugins: [
-    {
-      resolve: "gatsby-source-pg",
-      options: {
-        connectionString: "postgresql://localhost/app_db",
-        schema: "myschema",
-      }
-    }
-  ]
+  
 }

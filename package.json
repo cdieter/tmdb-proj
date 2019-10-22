@@ -14,7 +14,6 @@
   },
   "dependencies": {
     "gatsby": "^2.15.28",
-    "gatsby-source-pg": "^0.1.4",
     "react": "^16.10.1",
     "react-dom": "^16.10.1"
   },
