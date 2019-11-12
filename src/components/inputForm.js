@@ -22,9 +22,13 @@ export default class InputForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
-          Name:
-          <input type="text" value={this.state.value} onChange={this.handleChange} />
+        <label style={{padding: `0 1rem` }}>
+          <h3>Name:</h3>
+          <input type="text" value={this.state.value} onChange={this.handleChange}/>
+        </label>
+        <label style={{padding: `0 1rem` }}>
+          <h3>Job:</h3>
+          <input type="text" value={this.state.value} onChange={this.handleChange}/>
         </label>
         <input type="submit" value="Submit" />
         <p>Name: {this.state.finalValue}</p>
