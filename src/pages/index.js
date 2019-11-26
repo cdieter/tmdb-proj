@@ -8,7 +8,11 @@ export default ({data}) => (
   <Layout>
     <Pageheader headerText="New Features" />
     <p>Such wow. Very React. </p>
-    <p>{data.postgres.allTmdbAds.edges[0].node.name}</p>
+    <ul>
+      {data.postgres.allTmdbAds.nodes.map((item, name) => {
+        return <li>{item.name}</li>
+      })}
+    </ul>
     <InputForm />
   </Layout>
 )
@@ -17,11 +21,9 @@ export const query = graphql`
 {
   postgres{
 	  allTmdbAds{
-      edges{
-        node{
-          name
-        }
-      }
+      nodes {
+        name
+      }      
     }
   }
 }`
