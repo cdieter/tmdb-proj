@@ -11,6 +11,14 @@ module.exports = {
       options: {
         pathToConfigModule: `src/utils/typography`,
       }
-    }
+    },
+    {
+      resolve: "gatsby-source-pg",
+      options: {
+        connectionString: "postgres:///app_db",
+        schema: "public",
+        refetchInterval: 60, // Refetch data every 60 seconds
+      },
+    },
   ]
 }
